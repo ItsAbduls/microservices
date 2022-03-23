@@ -27,3 +27,9 @@ self signed certficates
 
 Enable SSL with ASP.NET Core using Nginx and Docker
 -- https://blog.tonysneed.com/2019/10/13/enable-ssl-with-asp-net-core-using-nginx-and-docker/
+Basket.API 
+- docker pull redis -- to pull redis image
+- docker run -d -p 6379:6379 --name aspnet-redis redis -- to run redis
+- docker logs -f aspnet-redis -- to see logs of redis
+- docker exec -it aspnet-redis /bin/bash -- to intorrect with redis
+-- redis-cli -- to use cli * set key value | get key* -- to interroct with redis
