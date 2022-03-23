@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  catalogDb:
+    container_name: catalogdatabase
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db 
+  catalog.api:
+    container_name: catalog.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=pa55w0rd!
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/Catalog.API.pfx
+      - "ConnectionStrings:MongoDatabaseSettings:mongoConnection=mongodb://catalogdatabase:27017"
+    depends_on:
+      - catalogdatabase
+    ports:
+      - "8081:80"
+      - "8000:443"
+    volumes:
+      - ~/.aspnet/https:/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "16e34dec-db83-4a03-9a0b-161f722904d2": {
+      "ProjectGuid": "16e34dec-db83-4a03-9a0b-161f722904d2",
+      "DisplayName": "Catalog.API",
+      "ColorIndex": 0
+    },
+    "22f61848-a75f-4e6c-af46-c1448d204f4b": {
+      "ProjectGuid": "22f61848-a75f-4e6c-af46-c1448d204f4b",
+      "DisplayName": "Catalog.API",
+      "ColorIndex": 1
+    },
+    "cfc8acf3-b472-4669-9251-61f8ddc0ad49": {
+      "ProjectGuid": "cfc8acf3-b472-4669-9251-61f8ddc0ad49",
+      "DisplayName": "Services",
+      "ColorIndex": 2
+    },
+    "0ef2289e-0acd-4539-89aa-b77fa854d40c": {
+      "ProjectGuid": "0ef2289e-0acd-4539-89aa-b77fa854d40c",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "4d0caa61-dec1-4b68-a321-ab07fa84ca0f": {
+      "ProjectGuid": "4d0caa61-dec1-4b68-a321-ab07fa84ca0f",
+      "DisplayName": "Nginx",
+      "ColorIndex": 4
+    },
+    "92882e87-56c5-4904-89a8-dc6de1eae0cc": {
+      "ProjectGuid": "92882e87-56c5-4904-89a8-dc6de1eae0cc",
+      "DisplayName": "Nginx",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

@@ -1,0 +1,114 @@
+services:
+  catalog.api:
+    build:
+      context: D:\courses\Les Jackson\microservices\AspNetMicroservices
+      dockerfile: Services/Catalog/Catalog.API/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Catalog.API
+      target: base
+    container_name: catalog.api
+    depends_on:
+      catalogdatabase:
+        condition: service_started
+    entrypoint:
+    - tail
+    - -f
+    - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_Kestrel__Certificates__Default__Password: MYPWD
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/Catalog.API.pfx
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      ConnectionStrings:MongoDatabaseSettings:mongoConnection: mongodb://catalogdatabase:27017
+      DOTNET_USE_POLLING_FILE_WATCHER: "1"
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: catalogapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net5.0/Catalog.API.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 8081
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: 8000
+      protocol: tcp
+    tty: true
+    volumes:
+    - type: bind
+      source: D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Catalog\Catalog.API
+      target: /app
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\.aspnet\https
+      target: /https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\vsdbg\vs2017u5
+      target: /remote_debugger
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Program Files\dotnet\sdk\NuGetFallbackFolder
+      target: /root/.nuget/fallbackpackages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\.nuget\packages\
+      target: /root/.nuget/packages
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: D:\courses\Les Jackson\microservices\AspNetMicroservices
+      target: /src
+      bind:
+        create_host_path: true
+  catalogDb:
+    container_name: catalogdatabase
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: 27017
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: mongo_data
+      target: /data/db
+      volume: {}
+networks:
+  default:
+    name: dockercompose6413698962591540575_default
+volumes:
+  mongo_data:
+    name: dockercompose6413698962591540575_mongo_data

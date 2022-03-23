@@ -1,0 +1,68 @@
+services:
+  catalog.api:
+    build:
+      context: D:\courses\Les Jackson\microservices\AspNetMicroservices
+      dockerfile: Services/Catalog/Catalog.API/Dockerfile
+    container_name: catalog.api
+    depends_on:
+      catalogdatabase:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_Kestrel__Certificates__Default__Password: MYPWD
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/Catalog.API.pfx
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      ConnectionStrings:MongoDatabaseSettings:mongoConnection: mongodb://catalogdatabase:27017
+    image: catalogapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 8081
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: 8000
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\toeng\.aspnet\https
+      target: /https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  catalogDb:
+    container_name: catalogdatabase
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: 27017
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: mongo_data
+      target: /data/db
+      volume: {}
+networks:
+  default:
+    name: dockercompose6413698962591540575_default
+volumes:
+  mongo_data:
+    name: dockercompose6413698962591540575_mongo_data
