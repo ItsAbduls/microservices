@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "35oOMlJCdrcpxYOrtIGm+W5H+k7xHJ4U+vH8Djki5w92drkq1lcNhTDDhPota0ktR8nar8yoj+iz/g//4WeSoA==",
+  "success": true,
+  "projectFilePath": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\Services\\Discount\\Discount.API\\Discount.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\toeng\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\toeng\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\toeng\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\toeng\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
+    "C:\\Users\\toeng\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
+    "C:\\Users\\toeng\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.0\\swashbuckle.aspnetcore.6.3.0.nupkg.sha512",
+    "C:\\Users\\toeng\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.0\\swashbuckle.aspnetcore.swagger.6.3.0.nupkg.sha512",
+    "C:\\Users\\toeng\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.0\\swashbuckle.aspnetcore.swaggergen.6.3.0.nupkg.sha512",
+    "C:\\Users\\toeng\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.0\\swashbuckle.aspnetcore.swaggerui.6.3.0.nupkg.sha512",
+    "C:\\Users\\toeng\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

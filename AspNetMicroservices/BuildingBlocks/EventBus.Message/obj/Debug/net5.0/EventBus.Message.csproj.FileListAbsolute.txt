@@ -1,0 +1,12 @@
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\bin\Debug\net5.0\EventBus.Message.deps.json
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\bin\Debug\net5.0\EventBus.Message.dll
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\bin\Debug\net5.0\EventBus.Message.pdb
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\obj\Debug\net5.0\EventBus.Message.csproj.AssemblyReference.cache
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\obj\Debug\net5.0\EventBus.Message.GeneratedMSBuildEditorConfig.editorconfig
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\obj\Debug\net5.0\EventBus.Message.AssemblyInfoInputs.cache
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\obj\Debug\net5.0\EventBus.Message.AssemblyInfo.cs
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\obj\Debug\net5.0\EventBus.Message.csproj.CoreCompileInputs.cache
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\obj\Debug\net5.0\EventBus.Message.dll
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\obj\Debug\net5.0\refint\EventBus.Message.dll
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\obj\Debug\net5.0\EventBus.Message.pdb
+D:\courses\Les Jackson\microservices\AspNetMicroservices\BuildingBlocks\EventBus.Message\obj\Debug\net5.0\ref\EventBus.Message.dll

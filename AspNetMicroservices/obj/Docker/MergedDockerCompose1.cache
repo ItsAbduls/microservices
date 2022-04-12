@@ -1,55 +1,35 @@
 services:
-  catalog.api:
+  basket.api:
     build:
       context: D:\courses\Les Jackson\microservices\AspNetMicroservices
-      dockerfile: Services/Catalog/Catalog.API/Dockerfile
-      labels:
-        com.microsoft.created-by: visual-studio
-        com.microsoft.visual-studio.project-name: Catalog.API
-      target: base
-    container_name: Catalog.API
-    entrypoint:
-    - tail
-    - -f
-    - /dev/null
+      dockerfile: Services/Basket/Basket.API/Dockerfile
+    container_name: basket.api
+    depends_on:
+      basketdatabase:
+        condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_Kestrel__Certificates__Default__Password: pa55w0rd!
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/Basket.API.pfx
       ASPNETCORE_URLS: https://+:443;http://+:80
-      DOTNET_USE_POLLING_FILE_WATCHER: "1"
-      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
-    image: catalogapi:dev
-    labels:
-      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
-        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net5.0/Catalog.API.dll"'
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
-        dotnet); then kill $$PID; fi"
-      com.microsoft.visualstudio.debuggee.program: dotnet
-      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+      CacheSettings:ConnectionString: basketdatabase:6379
+      GrpcSettings:DiscountUrl: https://discount.grpc
+    image: basketapi
     networks:
       default: null
     ports:
     - mode: ingress
       target: 80
+      published: 8082
       protocol: tcp
     - mode: ingress
       target: 443
+      published: 8001
       protocol: tcp
-    tty: true
     volumes:
     - type: bind
-      source: D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Catalog\Catalog.API
-      target: /app
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Users\toeng\vsdbg\vs2017u5
-      target: /remote_debugger
-      bind:
-        create_host_path: true
-    - type: bind
-      source: C:\Users\toeng\AppData\Roaming/ASP.NET/Https
-      target: /root/.aspnet/https
+      source: C:\Users\toeng\.aspnet\https
+      target: /https
       read_only: true
       bind:
         create_host_path: true
@@ -60,22 +40,330 @@ services:
       bind:
         create_host_path: true
     - type: bind
-      source: C:\Program Files\dotnet\sdk\NuGetFallbackFolder
-      target: /root/.nuget/fallbackpackages
+      source: C:\Users\toeng\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  basketDb:
+    container_name: basketdatabase
+    image: redis
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: 6379
+      protocol: tcp
+    restart: always
+  catalog.api:
+    build:
+      context: D:\courses\Les Jackson\microservices\AspNetMicroservices
+      dockerfile: Services/Catalog/Catalog.API/Dockerfile
+    container_name: catalog.api
+    depends_on:
+      catalogdatabase:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_Kestrel__Certificates__Default__Password: pa55w0rd!
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/Catalog.API.pfx
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      ConnectionStrings:MongoDatabaseSettings:mongoConnection: mongodb://catalogdatabase:27017
+    image: catalogapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 8081
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: 8000
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\toeng\.aspnet\https
+      target: /https
       read_only: true
       bind:
         create_host_path: true
     - type: bind
-      source: C:\Users\toeng\.nuget\packages\
-      target: /root/.nuget/packages
+      source: C:\Users\toeng\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
       read_only: true
       bind:
         create_host_path: true
     - type: bind
-      source: D:\courses\Les Jackson\microservices\AspNetMicroservices
-      target: /src
+      source: C:\Users\toeng\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
       bind:
         create_host_path: true
+  catalogDb:
+    container_name: catalogdatabase
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: 27017
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: mongo_data
+      target: /data/db
+      volume: {}
+  discount.api:
+    build:
+      context: D:\courses\Les Jackson\microservices\AspNetMicroservices
+      dockerfile: Services/Discount/Discount.API/Dockerfile
+    container_name: discount.api
+    depends_on:
+      discountdatabase:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_Kestrel__Certificates__Default__Password: pa55w0rd!
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/Discount.API.pfx
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DatabaseSettings:ConnectionString: ' Server=discountdatabase;Port=5432;Database=DiscoundDb;User
+        Id=admin;Password=admin12345'
+    image: discountapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 8083
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: 8002
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\toeng\.aspnet\https
+      target: /https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  discount.grpc:
+    build:
+      context: D:\courses\Les Jackson\microservices\AspNetMicroservices
+      dockerfile: Services/Discount/Discount.Grpc/Dockerfile
+    container_name: discount.grpc
+    depends_on:
+      discountdatabase:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_Kestrel__Certificates__Default__Password: pa55w0rd!
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/Grpc.pfx
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DatabaseSettings:ConnectionString: Server=discountdatabase;Port=5432;Database=DiscoundDb;User
+        Id=admin;Password=admin12345
+    image: discountgrpc
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 8084
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: 8003
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\toeng\.aspnet\https
+      target: /https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  discountDb:
+    container_name: discountdatabase
+    environment:
+      POSTGRES_DB: DiscountDb
+      POSTGRES_PASSWORD: admin12345
+      POSTGRES_USER: admin
+    image: postgres
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5432
+      published: 5432
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: postgres_data
+      target: /var/lib/postgresql/data
+      volume: {}
+  orderDb:
+    container_name: orderdatabase
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: yourStrong(!)Password
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: 1433
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: bind
+      source: D:\courses\Les Jackson\microservices\AspNetMicroservices\data-mssql
+      target: /var/opt/mssql/data
+      bind:
+        create_host_path: true
+  ordering.api:
+    build:
+      context: D:\courses\Les Jackson\microservices\AspNetMicroservices
+      dockerfile: Services/Ordering/Ordering.API/Dockerfile
+    container_name: ordering.api
+    depends_on:
+      orderdatabase:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_Kestrel__Certificates__Default__Password: pa55w0rd!
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/orderAPI.pfx
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      ConnectionStrings:OrderingConnectionString: Server=orderdatabase;Database=OrderDb;User
+        Id=sa;Password=yourStrong(!)Password
+    image: orderingapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 8085
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: 8004
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\toeng\.aspnet\https
+      target: /https
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\toeng\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  pgadmin:
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@aspnetrun.com
+      PGADMIN_DEFAULT_PASSWORD: admin12345
+    image: dpage/pgadmin4
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 5050
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: volume
+      source: pgadmin_data
+      target: /root/.pgadmin
+      volume: {}
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 8000
+      published: 8080
+      protocol: tcp
+    - mode: ingress
+      target: 9000
+      published: 9000
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: bind
+      source: /var/run/docker.sock
+      target: /var/run/docker.sock
+      bind:
+        create_host_path: true
+    - type: volume
+      source: portainer_data
+      target: /data
+      volume: {}
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management-alpine
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5672
+      published: 5672
+      protocol: tcp
+    - mode: ingress
+      target: 15672
+      published: 15672
+      protocol: tcp
+    restart: always
 networks:
   default:
     name: dockercompose6413698962591540575_default
+volumes:
+  mongo_data:
+    name: dockercompose6413698962591540575_mongo_data
+  pgadmin_data:
+    name: dockercompose6413698962591540575_pgadmin_data
+  portainer_data:
+    name: dockercompose6413698962591540575_portainer_data
+  postgres_data:
+    name: dockercompose6413698962591540575_postgres_data

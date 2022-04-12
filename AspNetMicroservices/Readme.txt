@@ -11,6 +11,7 @@ Mongo commands
 - show database -- to all database
 - show collections -- to all collections
 - docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d -- to run container using docker compose
+- docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up --build -- we doing this when we change e.g basketApi and its already create ,it will update that e.g we made change for discount.grpc
 - docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down -- to down all containers
 
 self signed certficates
@@ -33,3 +34,32 @@ Basket.API
 - docker logs -f aspnet-redis -- to see logs of redis
 - docker exec -it aspnet-redis /bin/bash -- to intorrect with redis
 -- redis-cli -- to use cli * set key value | get key* -- to interroct with redis
+Portainer.io
+-- this is used to see all images ,logs container of application by pull and setup portainer
+Discount Api
+-- add posgress
+-- docker pull dpage/pgadmin4 --add pgadmin image in docker compose for postgree managment dashboard
+-- discountdatabase is hotname -- to connect with
+-- create table Coupon (            -- create from dpage
+	Id serial primary key not null,
+	ProductName varchar(24) not null,
+	Description text,
+	Amount decimal 
+);
+Discount Grpc
+-- https://www.dotnetcurry.com/aspnet-core/1514/grpc-asp-net-core-3 -- this link solve https certificate issue
+Order.API
+-- Login failed for user sa when i configure it throug docker-compose 
+-- solved above issue by following -- https://github.com/Microsoft/mssql-docker/issues/283
+-- and https://bigdata-etl.com/microsoft-ms-sql-server-ms-docker-docker-compose/
+-- and https://stackoverflow.com/questions/39175194/docker-compose-persistent-data-mysql
+RabitMq
+-- helpull resource -- https://x-team.com/blog/set-up-rabbitmq-with-docker-compose/
+-- Rabbitmq doesn't start with docker-compose -- this link help to solve -- https://stackoverflow.com/questions/63116838/rabbitmq-doesnt-start-with-docker-compose
+-- rabbitmq managment default password and username is "guest"
+-- don't specify host in  yaml file under environment if spcify then mention in url default is / -- https://stackoverflow.com/questions/40957599/how-to-find-rabbitmq-url
+-- mass transit have builten retry mechinsim so we don't have to try -- 
+Docker important point
+-- remember if want reference to another class libray and alread user Container Orchestrator Support then next time use Docker support after deleting docker file
+-- docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml down -- then next
+-- use -- docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up --build -- 

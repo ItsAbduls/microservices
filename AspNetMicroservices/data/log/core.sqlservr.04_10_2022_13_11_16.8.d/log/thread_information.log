@@ -1,0 +1,2560 @@
+cat: /proc/8/io: Permission denied
+     1	sqlservr (8, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212742.843100
+     4	se.vruntime                                  :           450.658474
+     5	se.sum_exec_runtime                          :           128.957600
+     6	se.nr_migrations                             :                    2
+     7	nr_switches                                  :                   12
+     8	nr_voluntary_switches                        :                   10
+     9	nr_involuntary_switches                      :                    2
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  228
+    12	se.avg.runnable_sum                          :               233472
+    13	se.avg.util_sum                              :               233472
+    14	se.avg.load_avg                              :                    4
+    15	se.avg.runnable_avg                          :                    4
+    16	se.avg.util_avg                              :                    4
+    17	se.avg.last_update_time                      :      138212742842368
+    18	se.avg.util_est.ewma                         :                  725
+    19	se.avg.util_est.enqueued                     :                    4
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/stack: Permission denied
+     1	Name:	sqlservr
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	8
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	8
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	10
+    56	nonvoluntary_ctxt_switches:	2
+cat: /proc/8/task/10/io: Permission denied
+     1	sqlservr (10, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212744.442800
+     4	se.vruntime                                  :          1322.935869
+     5	se.sum_exec_runtime                          :             1.988800
+     6	se.nr_migrations                             :                    2
+     7	nr_switches                                  :                    5
+     8	nr_voluntary_switches                        :                    5
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                 1679
+    12	se.avg.runnable_sum                          :              1719581
+    13	se.avg.util_sum                              :              1171456
+    14	se.avg.load_avg                              :                   36
+    15	se.avg.runnable_avg                          :                   36
+    16	se.avg.util_avg                              :                   24
+    17	se.avg.last_update_time                      :      138212744441856
+    18	se.avg.util_est.ewma                         :                  129
+    19	se.avg.util_est.enqueued                     :                   24
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/10/stack: Permission denied
+     1	Name:	sqlservr
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	10
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	10
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	5
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/11/io: Permission denied
+     1	IoHandler (11, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.507600
+     4	se.vruntime                                  :           428.680493
+     5	se.sum_exec_runtime                          :             0.130300
+     6	se.nr_migrations                             :                    1
+     7	nr_switches                                  :                    3
+     8	nr_voluntary_switches                        :                    3
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  915
+    12	se.avg.runnable_sum                          :               938169
+    13	se.avg.util_sum                              :                12605
+    14	se.avg.load_avg                              :                   19
+    15	se.avg.runnable_avg                          :                   19
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743506944
+    18	se.avg.util_est.ewma                         :                  196
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/11/stack: Permission denied
+     1	Name:	IoHandler
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	11
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	11
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	3
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/12/io: Permission denied
+     1	AioHandler (12, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.510900
+     4	se.vruntime                                  :           428.785693
+     5	se.sum_exec_runtime                          :            48.299900
+     6	se.nr_migrations                             :                   27
+     7	nr_switches                                  :                  248
+     8	nr_voluntary_switches                        :                  246
+     9	nr_involuntary_switches                      :                    2
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  786
+    12	se.avg.runnable_sum                          :               806726
+    13	se.avg.util_sum                              :                20294
+    14	se.avg.load_avg                              :                   16
+    15	se.avg.runnable_avg                          :                   16
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743510016
+    18	se.avg.util_est.ewma                         :                   17
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/12/stack: Permission denied
+     1	Name:	AioHandler
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	12
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	12
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	246
+    56	nonvoluntary_ctxt_switches:	2
+cat: /proc/8/task/13/io: Permission denied
+     1	Wt-8 (13, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.485900
+     4	se.vruntime                                  :           359.159255
+     5	se.sum_exec_runtime                          :           713.191200
+     6	se.nr_migrations                             :                   97
+     7	nr_switches                                  :                 1689
+     8	nr_voluntary_switches                        :                 1681
+     9	nr_involuntary_switches                      :                    8
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  730
+    12	se.avg.runnable_sum                          :               749418
+    13	se.avg.util_sum                              :                 9047
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743485440
+    18	se.avg.util_est.ewma                         :                   69
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/13/stack: Permission denied
+     1	Name:	Wt-8
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	13
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	13
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	1681
+    56	nonvoluntary_ctxt_switches:	8
+cat: /proc/8/task/14/io: Permission denied
+     1	Wt-12 (14, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.721900
+     4	se.vruntime                                  :           432.870793
+     5	se.sum_exec_runtime                          :            63.941300
+     6	se.nr_migrations                             :                   92
+     7	nr_switches                                  :                  608
+     8	nr_voluntary_switches                        :                  607
+     9	nr_involuntary_switches                      :                    1
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                 4757
+    12	se.avg.runnable_sum                          :              4874969
+    13	se.avg.util_sum                              :              2492384
+    14	se.avg.load_avg                              :                  102
+    15	se.avg.runnable_avg                          :                  102
+    16	se.avg.util_avg                              :                   52
+    17	se.avg.last_update_time                      :      138212743720960
+    18	se.avg.util_est.ewma                         :                   59
+    19	se.avg.util_est.enqueued                     :                   51
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/14/stack: Permission denied
+     1	Name:	Wt-12
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	14
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	14
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	607
+    56	nonvoluntary_ctxt_switches:	1
+cat: /proc/8/task/15/io: Permission denied
+     1	Wt-16 (15, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212744.561300
+     4	se.vruntime                                  :          1330.860269
+     5	se.sum_exec_runtime                          :            18.180900
+     6	se.nr_migrations                             :                    4
+     7	nr_switches                                  :                   43
+     8	nr_voluntary_switches                        :                   16
+     9	nr_involuntary_switches                      :                   27
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                12868
+    12	se.avg.runnable_sum                          :             13179404
+    13	se.avg.util_sum                              :              7288803
+    14	se.avg.load_avg                              :                  276
+    15	se.avg.runnable_avg                          :                  276
+    16	se.avg.util_avg                              :                  151
+    17	se.avg.last_update_time                      :      138212744560640
+    18	se.avg.util_est.ewma                         :                  234
+    19	se.avg.util_est.enqueued                     :                  151
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/15/stack: Permission denied
+     1	Name:	Wt-16
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	15
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	15
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	16
+    56	nonvoluntary_ctxt_switches:	27
+cat: /proc/8/task/16/io: Permission denied
+     1	Wt-20 (16, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.469700
+     4	se.vruntime                                  :           429.091293
+     5	se.sum_exec_runtime                          :             1.009700
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    3
+     8	nr_voluntary_switches                        :                    3
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  697
+    12	se.avg.runnable_sum                          :               714290
+    13	se.avg.util_sum                              :               444978
+    14	se.avg.load_avg                              :                    5
+    15	se.avg.runnable_avg                          :                    5
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743469056
+    18	se.avg.util_est.ewma                         :                   57
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/16/stack: Permission denied
+     1	Name:	Wt-20
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	16
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	16
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	3
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/17/io: Permission denied
+     1	Wt-24 (17, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.473500
+     4	se.vruntime                                  :           428.650693
+     5	se.sum_exec_runtime                          :             0.312000
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  699
+    12	se.avg.runnable_sum                          :               715776
+    13	se.avg.util_sum                              :                 4096
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743473152
+    18	se.avg.util_est.ewma                         :                   42
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/17/stack: Permission denied
+     1	Name:	Wt-24
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	17
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	17
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/18/io: Permission denied
+     1	Wt-28 (18, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.476100
+     4	se.vruntime                                  :           428.649493
+     5	se.sum_exec_runtime                          :             0.378500
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  700
+    12	se.avg.runnable_sum                          :               716800
+    13	se.avg.util_sum                              :                 2048
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743475200
+    18	se.avg.util_est.ewma                         :                   26
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/18/stack: Permission denied
+     1	Name:	Wt-28
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	18
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	18
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/19/io: Permission denied
+     1	Wt-32 (19, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.478800
+     4	se.vruntime                                  :           428.649593
+     5	se.sum_exec_runtime                          :             0.467100
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  701
+    12	se.avg.runnable_sum                          :               717824
+    13	se.avg.util_sum                              :                 3072
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743478272
+    18	se.avg.util_est.ewma                         :                   12
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/19/stack: Permission denied
+     1	Name:	Wt-32
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	19
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	19
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/20/io: Permission denied
+     1	Wt-36 (20, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.481800
+     4	se.vruntime                                  :           428.649893
+     5	se.sum_exec_runtime                          :             0.486000
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  703
+    12	se.avg.runnable_sum                          :               719872
+    13	se.avg.util_sum                              :                 3072
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743481344
+    18	se.avg.util_est.ewma                         :                    8
+    19	se.avg.util_est.enqueued                     :                    8
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/20/stack: Permission denied
+     1	Name:	Wt-36
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	20
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	20
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/21/io: Permission denied
+     1	Wt-40 (21, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.484600
+     4	se.vruntime                                  :           428.649693
+     5	se.sum_exec_runtime                          :             0.427700
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  705
+    12	se.avg.runnable_sum                          :               721920
+    13	se.avg.util_sum                              :                 3072
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743484416
+    18	se.avg.util_est.ewma                         :                   13
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/21/stack: Permission denied
+     1	Name:	Wt-40
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	21
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	21
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/22/io: Permission denied
+     1	Wt-44 (22, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.487600
+     4	se.vruntime                                  :           428.649893
+     5	se.sum_exec_runtime                          :             0.420900
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  706
+    12	se.avg.runnable_sum                          :               722944
+    13	se.avg.util_sum                              :                 3072
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743487488
+    18	se.avg.util_est.ewma                         :                    7
+    19	se.avg.util_est.enqueued                     :                    7
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/22/stack: Permission denied
+     1	Name:	Wt-44
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	22
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	22
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/23/io: Permission denied
+     1	Wt-48 (23, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.490300
+     4	se.vruntime                                  :           428.649593
+     5	se.sum_exec_runtime                          :             0.313100
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  707
+    12	se.avg.runnable_sum                          :               723968
+    13	se.avg.util_sum                              :                 2048
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743489536
+    18	se.avg.util_est.ewma                         :                    4
+    19	se.avg.util_est.enqueued                     :                    4
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/23/stack: Permission denied
+     1	Name:	Wt-48
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	23
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	23
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/24/io: Permission denied
+     1	Wt-52 (24, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.494100
+     4	se.vruntime                                  :           428.650693
+     5	se.sum_exec_runtime                          :             0.309000
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  710
+    12	se.avg.runnable_sum                          :               727040
+    13	se.avg.util_sum                              :                 4096
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743493632
+    18	se.avg.util_est.ewma                         :                    9
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/24/stack: Permission denied
+     1	Name:	Wt-52
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	24
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	24
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/26/io: Permission denied
+     1	Wt-60 (26, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.497300
+     4	se.vruntime                                  :           428.650093
+     5	se.sum_exec_runtime                          :             0.389000
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  712
+    12	se.avg.runnable_sum                          :               729088
+    13	se.avg.util_sum                              :                 3072
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743496704
+    18	se.avg.util_est.ewma                         :                    9
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/26/stack: Permission denied
+     1	Name:	Wt-60
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	26
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	26
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/27/io: Permission denied
+     1	Wt-64 (27, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.500400
+     4	se.vruntime                                  :           428.649993
+     5	se.sum_exec_runtime                          :             0.532200
+     6	se.nr_migrations                             :                    1
+     7	nr_switches                                  :                    3
+     8	nr_voluntary_switches                        :                    3
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  713
+    12	se.avg.runnable_sum                          :               730112
+    13	se.avg.util_sum                              :                 3072
+    14	se.avg.load_avg                              :                   15
+    15	se.avg.runnable_avg                          :                   15
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743499776
+    18	se.avg.util_est.ewma                         :                  386
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/27/stack: Permission denied
+     1	Name:	Wt-64
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	27
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	27
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	3
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/28/io: Permission denied
+     1	Wt-68 (28, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.470100
+     4	se.vruntime                                  :           358.924855
+     5	se.sum_exec_runtime                          :             1.349700
+     6	se.nr_migrations                             :                    1
+     7	nr_switches                                  :                    5
+     8	nr_voluntary_switches                        :                    5
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  682
+    12	se.avg.runnable_sum                          :               698368
+    13	se.avg.util_sum                              :                12288
+    14	se.avg.load_avg                              :                   14
+    15	se.avg.runnable_avg                          :                   14
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743470080
+    18	se.avg.util_est.ewma                         :                  390
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/28/stack: Permission denied
+     1	Name:	Wt-68
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	28
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	28
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	5
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/30/io: Permission denied
+     1	Wt-80 (30, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212742.854600
+     4	se.vruntime                                  :           451.759474
+     5	se.sum_exec_runtime                          :            11.492400
+     6	se.nr_migrations                             :                    7
+     7	nr_switches                                  :                   46
+     8	nr_voluntary_switches                        :                   46
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                 1897
+    12	se.avg.runnable_sum                          :              1943503
+    13	se.avg.util_sum                              :              1574015
+    14	se.avg.load_avg                              :                   41
+    15	se.avg.runnable_avg                          :                   41
+    16	se.avg.util_avg                              :                   33
+    17	se.avg.last_update_time                      :      138212742853632
+    18	se.avg.util_est.ewma                         :                   53
+    19	se.avg.util_est.enqueued                     :                   33
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/30/stack: Permission denied
+     1	Name:	Wt-80
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	30
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	30
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	46
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/31/io: Permission denied
+     1	Wt-84 (31, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212744.449400
+     4	se.vruntime                                  :          1321.757569
+     5	se.sum_exec_runtime                          :             1.183600
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    5
+     8	nr_voluntary_switches                        :                    5
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                 1596
+    12	se.avg.runnable_sum                          :              1634304
+    13	se.avg.util_sum                              :                 7168
+    14	se.avg.load_avg                              :                   34
+    15	se.avg.runnable_avg                          :                   34
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212744449024
+    18	se.avg.util_est.ewma                         :                   99
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/31/stack: Permission denied
+     1	Name:	Wt-84
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	31
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	31
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	5
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/32/io: Permission denied
+     1	Wt-88 (32, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212742.849700
+     4	se.vruntime                                  :           450.427774
+     5	se.sum_exec_runtime                          :             6.879000
+     6	se.nr_migrations                             :                    5
+     7	nr_switches                                  :                   14
+     8	nr_voluntary_switches                        :                   14
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  266
+    12	se.avg.runnable_sum                          :               273395
+    13	se.avg.util_sum                              :               178579
+    14	se.avg.load_avg                              :                    4
+    15	se.avg.runnable_avg                          :                    4
+    16	se.avg.util_avg                              :                    3
+    17	se.avg.last_update_time                      :      138212742849536
+    18	se.avg.util_est.ewma                         :                   27
+    19	se.avg.util_est.enqueued                     :                    3
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/32/stack: Permission denied
+     1	Name:	Wt-88
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	32
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	32
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	14
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/33/io: Permission denied
+     1	Wt-92 (33, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.474400
+     4	se.vruntime                                  :           358.917755
+     5	se.sum_exec_runtime                          :             0.551000
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    3
+     8	nr_voluntary_switches                        :                    3
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  663
+    12	se.avg.runnable_sum                          :               678912
+    13	se.avg.util_sum                              :                 4096
+    14	se.avg.load_avg                              :                    0
+    15	se.avg.runnable_avg                          :                    0
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743474176
+    18	se.avg.util_est.ewma                         :                  386
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/33/stack: Permission denied
+     1	Name:	Wt-92
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	33
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	33
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	3
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/34/io: Permission denied
+     1	Wt-96 (34, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.476600
+     4	se.vruntime                                  :           358.915655
+     5	se.sum_exec_runtime                          :             0.602100
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  663
+    12	se.avg.runnable_sum                          :               678912
+    13	se.avg.util_sum                              :                 2048
+    14	se.avg.load_avg                              :                    0
+    15	se.avg.runnable_avg                          :                    0
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743476224
+    18	se.avg.util_est.ewma                         :                  197
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/34/stack: Permission denied
+     1	Name:	Wt-96
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	34
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	34
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/35/io: Permission denied
+     1	Wt-100 (35, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212744.452000
+     4	se.vruntime                                  :          1321.753569
+     5	se.sum_exec_runtime                          :             0.645900
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    4
+     8	nr_voluntary_switches                        :                    4
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                 1592
+    12	se.avg.runnable_sum                          :              1630208
+    13	se.avg.util_sum                              :                 2048
+    14	se.avg.load_avg                              :                   34
+    15	se.avg.runnable_avg                          :                   34
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212744451072
+    18	se.avg.util_est.ewma                         :                  174
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  200
+cat: /proc/8/task/35/stack: Permission denied
+     1	Name:	Wt-100
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	35
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	35
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	4
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/36/io: Permission denied
+     1	Wt-104 (36, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.479100
+     4	se.vruntime                                  :           358.915955
+     5	se.sum_exec_runtime                          :             0.315500
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  663
+    12	se.avg.runnable_sum                          :               678912
+    13	se.avg.util_sum                              :                 2048
+    14	se.avg.load_avg                              :                    0
+    15	se.avg.runnable_avg                          :                    0
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743478272
+    18	se.avg.util_est.ewma                         :                   87
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/36/stack: Permission denied
+     1	Name:	Wt-104
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	36
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	36
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/37/io: Permission denied
+     1	Wt-108 (37, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.502600
+     4	se.vruntime                                  :           428.649093
+     5	se.sum_exec_runtime                          :             0.855500
+     6	se.nr_migrations                             :                    1
+     7	nr_switches                                  :                    6
+     8	nr_voluntary_switches                        :                    6
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  684
+    12	se.avg.runnable_sum                          :               700416
+    13	se.avg.util_sum                              :                 2048
+    14	se.avg.load_avg                              :                    0
+    15	se.avg.runnable_avg                          :                    0
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743501824
+    18	se.avg.util_est.ewma                         :                  312
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/37/stack: Permission denied
+     1	Name:	Wt-108
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	37
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	37
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	6
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/38/io: Permission denied
+     1	Wt-116 (38, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212742.856900
+     4	se.vruntime                                  :           454.704074
+     5	se.sum_exec_runtime                          :           153.478200
+     6	se.nr_migrations                             :                   47
+     7	nr_switches                                  :                  894
+     8	nr_voluntary_switches                        :                  865
+     9	nr_involuntary_switches                      :                   29
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                 6692
+    12	se.avg.runnable_sum                          :              6853491
+    13	se.avg.util_sum                              :              4589325
+    14	se.avg.load_avg                              :                  145
+    15	se.avg.runnable_avg                          :                  145
+    16	se.avg.util_avg                              :                   98
+    17	se.avg.last_update_time                      :      138212742856704
+    18	se.avg.util_est.ewma                         :                  109
+    19	se.avg.util_est.enqueued                     :                   98
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/38/stack: Permission denied
+     1	Name:	Wt-116
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	38
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	38
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	865
+    56	nonvoluntary_ctxt_switches:	29
+cat: /proc/8/task/39/io: Permission denied
+     1	Wt-120 (39, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.482800
+     4	se.vruntime                                  :           358.917155
+     5	se.sum_exec_runtime                          :             1.121900
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    7
+     8	nr_voluntary_switches                        :                    7
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  662
+    12	se.avg.runnable_sum                          :               677888
+    13	se.avg.util_sum                              :                 4096
+    14	se.avg.load_avg                              :                    0
+    15	se.avg.runnable_avg                          :                    0
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212743482368
+    18	se.avg.util_est.ewma                         :                  111
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                  100
+cat: /proc/8/task/39/stack: Permission denied
+     1	Name:	Wt-120
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	39
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	39
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	7
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/40/io: Permission denied
+     1	Wt-124 (40, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212742.852100
+     4	se.vruntime                                  :           450.423574
+     5	se.sum_exec_runtime                          :             0.452500
+     6	se.nr_migrations                             :                    0
+     7	nr_switches                                  :                    2
+     8	nr_voluntary_switches                        :                    2
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                   45
+    12	se.avg.runnable_sum                          :                46083
+    13	se.avg.util_sum                              :                 2051
+    14	se.avg.load_avg                              :                    0
+    15	se.avg.runnable_avg                          :                    0
+    16	se.avg.util_avg                              :                    0
+    17	se.avg.last_update_time                      :      138212742851584
+    18	se.avg.util_est.ewma                         :                  380
+    19	se.avg.util_est.enqueued                     :                    0
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/40/stack: Permission denied
+     1	Name:	Wt-124
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	40
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	40
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	2
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/47/io: Permission denied
+     1	Wt-156 (47, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212743.488400
+     4	se.vruntime                                  :           359.540255
+     5	se.sum_exec_runtime                          :             1.319800
+     6	se.nr_migrations                             :                    1
+     7	nr_switches                                  :                    7
+     8	nr_voluntary_switches                        :                    7
+     9	nr_involuntary_switches                      :                    0
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  940
+    12	se.avg.runnable_sum                          :               947508
+    13	se.avg.util_sum                              :               208260
+    14	se.avg.load_avg                              :                    6
+    15	se.avg.runnable_avg                          :                    5
+    16	se.avg.util_avg                              :                    4
+    17	se.avg.last_update_time                      :      138212743487488
+    18	se.avg.util_est.ewma                         :                  205
+    19	se.avg.util_est.enqueued                     :                    4
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/47/stack: Permission denied
+     1	Name:	Wt-156
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	47
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	47
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	7
+    56	nonvoluntary_ctxt_switches:	0
+cat: /proc/8/task/8/io: Permission denied
+     1	sqlservr (8, #threads: 31)
+     2	-------------------------------------------------------------------
+     3	se.exec_start                                :     138212742.843100
+     4	se.vruntime                                  :           450.658474
+     5	se.sum_exec_runtime                          :           128.957600
+     6	se.nr_migrations                             :                    2
+     7	nr_switches                                  :                   12
+     8	nr_voluntary_switches                        :                   10
+     9	nr_involuntary_switches                      :                    2
+    10	se.load.weight                               :              1048576
+    11	se.avg.load_sum                              :                  228
+    12	se.avg.runnable_sum                          :               233472
+    13	se.avg.util_sum                              :               233472
+    14	se.avg.load_avg                              :                    4
+    15	se.avg.runnable_avg                          :                    4
+    16	se.avg.util_avg                              :                    4
+    17	se.avg.last_update_time                      :      138212742842368
+    18	se.avg.util_est.ewma                         :                  725
+    19	se.avg.util_est.enqueued                     :                    4
+    20	policy                                       :                    0
+    21	prio                                         :                  120
+    22	clock-delta                                  :                    0
+cat: /proc/8/task/8/stack: Permission denied
+     1	Name:	sqlservr
+     2	Umask:	0022
+     3	State:	T (stopped)
+     4	Tgid:	8
+     5	Ngid:	0
+     6	Pid:	8
+     7	PPid:	1
+     8	TracerPid:	0
+     9	Uid:	10001	10001	10001	10001
+    10	Gid:	0	0	0	0
+    11	FDSize:	64
+    12	Groups:	 
+    13	NStgid:	8
+    14	NSpid:	8
+    15	NSpgid:	1
+    16	NSsid:	1
+    17	VmPeak:	 2368880 kB
+    18	VmSize:	 2368180 kB
+    19	VmLck:	       0 kB
+    20	VmPin:	       0 kB
+    21	VmHWM:	  136624 kB
+    22	VmRSS:	  136624 kB
+    23	RssAnon:	  122668 kB
+    24	RssFile:	   13956 kB
+    25	RssShmem:	       0 kB
+    26	VmData:	 2272396 kB
+    27	VmStk:	     132 kB
+    28	VmExe:	    1616 kB
+    29	VmLib:	   47064 kB
+    30	VmPTE:	     752 kB
+    31	VmSwap:	       0 kB
+    32	HugetlbPages:	       0 kB
+    33	CoreDumping:	0
+    34	THP_enabled:	1
+    35	Threads:	31
+    36	SigQ:	2/30540
+    37	SigPnd:	0000000000000000
+    38	ShdPnd:	0000000000000200
+    39	SigBlk:	0000000600005007
+    40	SigIgn:	0000000200000000
+    41	SigCgt:	00000001c1808ef8
+    42	CapInh:	00000000a80425fb
+    43	CapPrm:	0000000000000400
+    44	CapEff:	0000000000000400
+    45	CapBnd:	00000000a80425fb
+    46	CapAmb:	0000000000000000
+    47	NoNewPrivs:	0
+    48	Seccomp:	2
+    49	Seccomp_filters:	1
+    50	Speculation_Store_Bypass:	thread force mitigated
+    51	Cpus_allowed:	f
+    52	Cpus_allowed_list:	0-3
+    53	Mems_allowed:	1
+    54	Mems_allowed_list:	0
+    55	voluntary_ctxt_switches:	10
+    56	nonvoluntary_ctxt_switches:	2

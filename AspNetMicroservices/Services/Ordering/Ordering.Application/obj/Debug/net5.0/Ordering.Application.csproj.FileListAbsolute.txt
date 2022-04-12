@@ -1,0 +1,15 @@
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\bin\Debug\net5.0\Ordering.Application.deps.json
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\bin\Debug\net5.0\Ordering.Application.dll
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\bin\Debug\net5.0\Ordering.Application.pdb
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\bin\Debug\net5.0\Ordering.Domain.dll
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\bin\Debug\net5.0\Ordering.Domain.pdb
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.csproj.AssemblyReference.cache
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.AssemblyInfoInputs.cache
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.AssemblyInfo.cs
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.csproj.CoreCompileInputs.cache
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.csproj.CopyComplete
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.dll
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\obj\Debug\net5.0\refint\Ordering.Application.dll
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.pdb
+D:\courses\Les Jackson\microservices\AspNetMicroservices\Services\Ordering\Ordering.Application\obj\Debug\net5.0\ref\Ordering.Application.dll

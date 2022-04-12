@@ -35,7 +35,22 @@
       "ProjectGuid": "92882e87-56c5-4904-89a8-dc6de1eae0cc",
       "DisplayName": "Nginx",
       "ColorIndex": 5
+    },
+    "7afdd02a-48b6-444e-8b8c-277d79c9bc43": {
+      "ProjectGuid": "7afdd02a-48b6-444e-8b8c-277d79c9bc43",
+      "DisplayName": "Basket.API",
+      "ColorIndex": 6
+    },
+    "ee4860c5-ec4e-4a0f-bc4e-518e277740df": {
+      "ProjectGuid": "ee4860c5-ec4e-4a0f-bc4e-518e277740df",
+      "DisplayName": "Discount.API",
+      "ColorIndex": 7
+    },
+    "bf39b6e4-66e7-4d4f-b28b-43c41e85de78": {
+      "ProjectGuid": "bf39b6e4-66e7-4d4f-b28b-43c41e85de78",
+      "DisplayName": "Discount.Grpc",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 9
 }

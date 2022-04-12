@@ -4,14 +4,14 @@
     "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\Services\\Basket\\Basket.API\\Basket.API.csproj": {}
   },
   "projects": {
-    "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\Services\\Basket\\Basket.API\\Basket.API.csproj": {
+    "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\BuildingBlocks\\EventBus.Message\\EventBus.Message.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\Services\\Basket\\Basket.API\\Basket.API.csproj",
-        "projectName": "Basket.API",
-        "projectPath": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\Services\\Basket\\Basket.API\\Basket.API.csproj",
+        "projectUniqueName": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\BuildingBlocks\\EventBus.Message\\EventBus.Message.csproj",
+        "projectName": "EventBus.Message",
+        "projectPath": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\BuildingBlocks\\EventBus.Message\\EventBus.Message.csproj",
         "packagesPath": "C:\\Users\\toeng\\.nuget\\packages\\",
-        "outputPath": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\Services\\Basket\\Basket.API\\obj\\",
+        "outputPath": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\BuildingBlocks\\EventBus.Message\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,10 +42,99 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\Services\\Basket\\Basket.API\\Basket.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\Services\\Basket\\Basket.API\\Basket.API.csproj",
+        "projectName": "Basket.API",
+        "projectPath": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\Services\\Basket\\Basket.API\\Basket.API.csproj",
+        "packagesPath": "C:\\Users\\toeng\\.nuget\\packages\\",
+        "outputPath": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\Services\\Basket\\Basket.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\toeng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\BuildingBlocks\\EventBus.Message\\EventBus.Message.csproj": {
+                "projectPath": "D:\\courses\\Les Jackson\\microservices\\AspNetMicroservices\\BuildingBlocks\\EventBus.Message\\EventBus.Message.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.40.0, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.1.6, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.1.6, )"
+            },
+            "MassTransit.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.6, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.1.6, )"
+            },
             "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.14.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -66,12 +155,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.12, 5.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -80,7 +163,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

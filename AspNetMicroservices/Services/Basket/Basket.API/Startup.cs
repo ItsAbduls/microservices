@@ -1,4 +1,7 @@
+using Basket.API.DiscountGrpcService;
 using Basket.API.Repositories;
+using Discount.Grpc.Protos;
+using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,6 +14,7 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Basket.API
@@ -27,11 +31,40 @@ namespace Basket.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // redis configuration
             services.AddStackExchangeRedisCache(options =>
             {
                 options.Configuration = Configuration.GetValue<string>("CacheSettings:ConnectionString");
             });
+            // Grpc configuration
+            services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(o =>
+            {
+                o.Address = new Uri(Configuration["GrpcSettings:DiscountUrl"]);
+
+            }).ConfigurePrimaryHttpMessageHandler(() =>
+            {
+                return new HttpClientHandler
+                {
+                    // Use httpclient to ignore credential validity
+                    //ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+                    // Use grpc to ignore credential validity
+                    ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+                };
+            });
+
+            services.AddScoped<ClientDiscountGrpcService>();
+
+            // Masstransit-RabbitMQ configuration
+            services.AddMassTransit(config => {
+                config.UsingRabbitMq((ctx, cfg) =>
+                {
+                    cfg.Host(Configuration["EventBusSettings:HostAddress"]);
+                });
+            });
+            services.AddMassTransitHostedService();
+            // service
             services.AddTransient<IBasketRepository, BasketRepository>();
+            services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
